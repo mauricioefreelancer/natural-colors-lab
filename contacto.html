@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Colors Lab - Contacto</title>
+    <link rel="icon" type="image/svg+xml" href="MaterialGrafico/Iconos/logo.svg">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Sección de Encabezado/Navegación -->
+    <!-- Versión Desktop -->
+    <div class="box desktop-header">
+        <div class="men">
+            <div class="navbar">
+                <div class="navbar-center">
+                    <div class="navbar-main">
+                        <div class="text-wrapper"><a href="index.html">•INICIO•</a></div>
+                        <div class="div"><a href="nosotros.html">•NOSOTROS•</a></div>
+                        <div class="text-wrapper-2"><a href="rituales.html">•RITUALES•</a></div>
+                        <div class="logo-section">
+                            <img class="favicon" src="MaterialGrafico/Iconos/logo.svg" alt="Natural Colors Logo" />
+                        </div>
+                        <div class="text-wrapper-3"><a href="kit-regalos.html">•KIT REGALOS•</a></div>
+                        <div class="text-wrapper-4"><a href="maquila.html">•MAQUILA•</a></div>
+                        <div class="text-wrapper-5 active"><a href="contacto.html">•CONTACTO•</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botón de tienda independiente -->
+        <div class="cart-section">
+            <div class="cart-icon">
+                <a href="#carrito">
+                    <img src="MaterialGrafico/Iconos/iconostore.svg" alt="Carrito" class="cart-gif">
+                </a>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Versión Móvil -->
+    <div class="box mobile-header">
+        <div class="men-MB">
+            <div class="div-mobile">Selecciona la página</div>
+
+            <img class="favicon" src="MaterialGrafico/Iconos/logo.svg" alt="Natural Colors Logo" />
+            <div class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <div><a href="index.html">•INICIO•</a></div>
+                    <div><a href="nosotros.html">•NOSOTROS•</a></div>
+                    <div><a href="rituales.html">•RITUALES•</a></div>
+                    <div><a href="kit-regalos.html">•KIT REGALOS•</a></div>
+                    <div><a href="maquila.html">•MAQUILA•</a></div>
+                    <div class="active"><a href="contacto.html">•CONTACTO•</a></div>
+                    <div class="mobile-cart-option">
+                        <a href="#carrito">
+                            <img src="MaterialGrafico/Iconos/iconostore.svg" alt="Tienda" class="mobile-cart-gif">
+                            TIENDA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Principal de Contacto -->
+    <section id="contacto" class="contacto-section">
+        <div class="container">
+            <h1>CONTACTO</h1>
+            <h2>Estamos aquí para ayudarte</h2>
+            
+            <div class="contacto-intro">
+                <p>¿Tienes preguntas sobre nuestros productos? ¿Necesitas asesoría personalizada? ¿Quieres conocer más sobre nuestros servicios de maquila? Contáctanos y te responderemos lo antes posible.</p>
+            </div>
+            
+            <div class="contacto-content">
+                <div class="contact-form-section">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="productos">Consulta sobre productos</option>
+                                <option value="maquila">Servicios de maquila</option>
+                                <option value="distribucion">Distribución</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Quiero recibir noticias y promociones de Natural Colors</label>
+                        </div>
+                        <button type="submit" class="btn primary">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-section">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@naturalcolors.com.co</p>
+                                <p>ventas@naturalcolors.com.co</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-text">
+                                <h4>Teléfonos</h4>
+                                <p>+57 123 456 7823</p>
+                                <p>+57 987 654 3210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Oficina Principal</h4>
+                                <p>Calle 87 #27 A-39</p>
+                                <p>Bogotá, Colombia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-text">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 08:00 am - 06:00 pm</p>
+                                <p>Sábados: 09:00 am - 02:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>Síguenos en Redes Sociales</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘 Facebook</a>
+                            <a href="#" class="social-link">📷 Instagram</a>
+                            <a href="#" class="social-link">🐦 Twitter</a>
+                            <a href="#" class="social-link">💼 LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h3>Nuestra Ubicación</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8234567890123!2d-74.0567890!3d4.6789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDAnNDQuMCJOIDc0wrAwMycyNC40Ilc!5e0!3m2!1ses!2sco!4v1234567890123!5m2!1ses!2sco" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h3>Preguntas Frecuentes</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>¿Hacen envíos a toda Colombia?</h4>
+                        <p>Sí, realizamos envíos a todo el territorio nacional. Los tiempos de entrega varían según la ciudad de destino.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Cuál es el tiempo de respuesta para servicios de maquila?</h4>
+                        <p>El tiempo de desarrollo varía según la complejidad del proyecto, pero generalmente oscila entre 4 a 8 semanas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Ofrecen muestras de productos?</h4>
+                        <p>Sí, ofrecemos muestras de nuestros productos para que puedas probarlos antes de realizar tu compra.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Tienen distribuidores autorizados?</h4>
+                        <p>Contamos con una red de distribuidores autorizados. Contáctanos para conocer el más cercano a tu ubicación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h2>INSPIRAMOS BELLEZA CON ESENCIA NATURAL</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>info@naturalcolors.com.co</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Celular</h3>
+                        <p>+57 123 456 7823</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Suscríbete siempre a nuestras novedades</h3>
+                        <form>
+                            <input type="email" placeholder="Email">
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Oficina</h3>
+                        <p>Calle 87 #27 A-39, Bogotá</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Horario</h3>
+                        <p>08:00 am - 06:00 pm</p>
+                    </div>
+                </div>
+                
+                <div class="footer-logo">
+                    <img src="MaterialGrafico/Iconos/logo.svg" alt="Natural Colors Logo">
+                    <p>En <strong>Natural Colors</strong> queremos crear productos que cuiden tu cabello y el planeta. Productos <strong>naturales, artesanales y resultados profesionales</strong> te acompañamos en cada paso de tu <strong>rutina de belleza</strong>.</p>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>Copyright © 2024 | <a href="#privacy">Privacy Policy</a></p>
+                    <p>Natural Color's</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
