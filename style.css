@@ -1009,7 +1009,7 @@
 
 .seccion1 .natural-colors {
   position: absolute;
-  top: 57px;
+  top: 70px;
   right: 150px;
   width: 764px;
   height: 763px;
@@ -1052,75 +1052,79 @@
   .seccion1 .natural-colors {
     width: 600px;
     height: 600px;
-    right: 50px;
+    right: -50px;
   }
 }
 
 @media (max-width: 768px) {
   .seccion1 {
-    height: 600px;
     padding-top: 92px;
     box-sizing: border-box;
   }
   
   .seccion1 .barra-verde {
-    width: 90%;
-    height: 250px;
-    top: 120px;
+    width: 95%;
+    top: 20px;
     border-radius: 0px 100px 100px 0px;
   }
   
   .seccion1 .text-wrapper {
-    font-size: 18px;
-    left: 50px;
-    top: 140px;
-    width: 250px;
+    font-size: 16px;
+    left: 20px;
+    top: 40px;
+    width: calc(100% - 40px);
+    max-width: 320px;
   }
   
   .seccion1 .div {
-    font-size: 32px;
-    left: 50px;
-    top: 160px;
-    width: 400px;
+    font-size: 28px;
+    left: 20px;
+    top: 65px;
+    width: calc(100% - 40px);
+    max-width: 320px;
   }
   
   .seccion1 .descubre {
-    font-size: 16px;
-    left: 50px;
-    top: 280px;
-    width: 300px;
+    font-size: 14px;
+    left: 20px;
+    top: 150px;
+    width: calc(100% - 40px);
+    max-width: 320px;
   }
   
   .seccion1 .rectangle {
-    left: 50px;
-    top: 250px;
-    width: 350px;
-    height: 8px;
+    left: 20px;
+    top: 125px;
+    width: calc(100% - 40px);
+    max-width: 280px;
+    height: 6px;
   }
   
   .seccion1 .botn-header {
-    left: 50px;
-    top: 350px;
-    width: 300px;
-    height: 60px;
+    left: 20px;
+    top: 290px;
+    width: calc(100% - 40px);
+    max-width: 280px;
+    height: 50px;
   }
   
   .seccion1 .rectangle-2 {
-    width: 300px;
-    height: 60px;
+    width: 100%;
+    height: 50px;
   }
   
   .seccion1 .CONOCE-NUESTRA-l-NEA {
-    width: 300px;
-    font-size: 16px;
-    top: 22px;
+    width: 100%;
+    font-size: 13px;
+    top: 18px;
   }
   
   .seccion1 .natural-colors {
     width: 400px;
     height: 400px;
-    right: 20px;
-    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 400px;
   }
 }
 
