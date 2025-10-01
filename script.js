@@ -1,28 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Función para cambiar el frame de hojas según la orientación
-    function updateLeafFrame() {
-        const hojasMarco = document.querySelector('.hojas-marco');
-        if (hojasMarco) {
-            // Si la pantalla es más alta que ancha (orientación vertical)
-            if (window.innerWidth < window.innerHeight) {
-                // Usar la versión móvil
-                hojasMarco.src = 'MaterialGrafico/Iconos/hojasInicioMovil.svg';
-            } else {
-                // Usar la versión desktop
-                hojasMarco.src = 'MaterialGrafico/Iconos/hojasInicio.svg';
-            }
-        }
-    }
-
-    // Llamar la función al cargar la página
-    updateLeafFrame();
-
-    // Actualizar cuando cambie el tamaño de la ventana
-    window.addEventListener('resize', updateLeafFrame);
-    window.addEventListener('orientationchange', function() {
-        setTimeout(updateLeafFrame, 100);
-    });
-
     // Funcionalidad para esconder/mostrar menú al hacer scroll
     let lastScrollTop = 0;
     let isMenuHidden = false;
