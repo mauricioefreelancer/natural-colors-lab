@@ -599,6 +599,10 @@
     height: auto;
   }
   
+  .box.mobile-header {
+    height: 156px;
+  }
+  
   .box .men-MB {
     position: fixed;
     top: 0;
@@ -1006,7 +1010,7 @@
 .seccion1 .natural-colors {
   position: absolute;
   top: 57px;
-  right: 240px;
+  right: 150px;
   width: 764px;
   height: 763px;
   object-fit: cover;
@@ -1314,6 +1318,11 @@
     height: auto;
     min-height: 720px;
     overflow-x: hidden;
+  }
+  
+  .box.mobile-header {
+    min-height: 156px;
+    height: 156px;
   }
   
   .box .HEADER {
