@@ -1021,7 +1021,6 @@
 @media (max-width: 1200px) {
   .seccion1 .barra-verde {
     width: 75%;
-    height: 350px;
   }
   
   .seccion1 .text-wrapper {
@@ -1063,9 +1062,11 @@
   }
   
   .seccion1 .barra-verde {
-    width: 95%;
-    top: 20px;
-    border-radius: 0px 100px 100px 0px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: calc(110% - 40px);
+    position: absolute;
   }
   
   .seccion1 .text-wrapper {
@@ -1089,20 +1090,18 @@
   }
   
   .seccion1 .descubre {
-    font-size: 3.5vw;
     left: 20px;
-    top: 150px;
-    width: calc(100% - 40px);
-    max-width: 320px;
+    top: 190px;
+    width: calc(84% - 5px);
   }
   
   .seccion1 .span {
-    font-size: 3.5vw;
+    
   }
   
   .seccion1 .rectangle {
     left: 20px;
-    top: 125px;
+    top: 165px;
     width: calc(100% - 40px);
     max-width: 280px;
     height: 6px;
@@ -1122,6 +1121,7 @@
     width: 100%;
     height: 100%;
     min-height: auto;
+    top: 60px;
   }
   
   .seccion1 .CONOCE-NUESTRA-l-NEA {
@@ -1130,7 +1130,7 @@
     padding: 8px 12px;
     line-height: 1.2;
     position: relative;
-    top: 0;
+    top: 60px;
     text-align: center;
     white-space: nowrap;
     overflow-wrap: break-word;
@@ -1138,10 +1138,10 @@
   
   .seccion1 .natural-colors {
     width: 400px;
-    height: 400px;
+    height: 450px;
     left: 50%;
     transform: translateX(-50%);
-    top: 355px;
+    top: 383px;
   }
 }
 
