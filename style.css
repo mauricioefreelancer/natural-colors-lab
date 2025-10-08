@@ -1,3 +1,6 @@
+/* Importación de fuentes para RITUALES CAPILARES */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .box {
   position: relative;
   width: 100%;
@@ -833,6 +836,249 @@
     font-size: 14px;
     letter-spacing: 1px;
   }
+}
+
+/* ===== ESTILOS PARA SECCIÓN RITUALES CAPILARES ===== */
+
+/* Variables específicas para RITUALES CAPILARES */
+:root {
+  --natural-colors: rgba(61, 140, 36, 0.2);
+}
+
+/* Importación del reset de Meyer solo si es necesario */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* Estilos específicos para la sección RITUALES CAPILARES */
+#rituales-capilares-section {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#rituales-capilares-section .box {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+#rituales-capilares-section .RATUALES-CAPILARES {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+#rituales-capilares-section .gris-fondo-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#rituales-capilares-section .barra-verde {
+  position: absolute;
+  top: 30px;
+  left: 170px;
+  width: 2000px;
+  height: 360px;
+  border-radius: 0px 240px 240px 0px;
+  transform: rotate(-180deg);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(64, 140, 36, 1) 0%, rgba(43, 107, 19, 1) 100%);
+  z-index: 2;
+}
+
+#rituales-capilares-section .image {
+  position: absolute;
+  top: 30px;
+  left: 140px;
+  width: 350px;
+  height: 750px;
+  z-index: 3;
+}
+
+/* Grid de productos */
+#rituales-capilares-section .product-grid {
+  position: absolute;
+  top: 360px;
+  left: 580px;
+  width: 800px;
+  height: 180px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  z-index: 4;
+}
+
+#rituales-capilares-section .restauracin-capilar,
+#rituales-capilares-section .ritual-curls-hair,
+#rituales-capilares-section .ritual-fast-men,
+#rituales-capilares-section .hidratacin-keramilk {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#rituales-capilares-section .restauracin-capilar:hover,
+#rituales-capilares-section .ritual-curls-hair:hover,
+#rituales-capilares-section .ritual-fast-men:hover,
+#rituales-capilares-section .hidratacin-keramilk:hover {
+  transform: scale(1.05);
+}
+
+/* Botón */
+#rituales-capilares-section .botn-rituales {
+  position: absolute;
+  top: 600px;
+  left: 580px;
+  width: 350px;
+  height: 77px;
+  z-index: 5;
+}
+
+#rituales-capilares-section .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 77px;
+  border-radius: 30px 0px 30px 0px;
+  background: linear-gradient(270deg, rgba(64, 140, 36, 1) 0%, rgba(43, 107, 19, 1) 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#rituales-capilares-section .rectangle:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#rituales-capilares-section .DESCUBRIR-AHORA {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 350px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: normal;
+  white-space: nowrap;
+  z-index: 6;
+}
+
+/* Textos */
+#rituales-capilares-section .text-wrapper-2 {
+  position: absolute;
+  top: 60px;
+  left: 580px;
+  width: 615px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 14.64px;
+  line-height: normal;
+  z-index: 4;
+}
+
+#rituales-capilares-section .p {
+  position: absolute;
+  top: 100px;
+  left: 590px;
+  width: 733px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 500;
+  color: #ffa6af;
+  font-size: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+#rituales-capilares-section .div {
+  position: absolute;
+  top: 150px;
+  left: 590px;
+  width: 637px;
+  height: 11px;
+  border-radius: 9px;
+  background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
+  z-index: 4;
+}
+
+#rituales-capilares-section .en-natural-colors {
+  position: absolute;
+  top: 190px;
+  left: 590px;
+  width: 718px;
+  font-family: "Raleway", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: 40px;
+  z-index: 4;
+}
+
+#rituales-capilares-section .text-wrapper-3 {
+  font-weight: 500;
+}
+
+#rituales-capilares-section .text-wrapper-4 {
+  font-family: "Raleway", Helvetica;
+  font-weight: 900;
+}
+
+/* Estilos para enlaces del botón */
+#rituales-capilares-section .botn-rituales a.rectangle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 77px;
+  border-radius: 30px 0px 30px 0px;
+  background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#rituales-capilares-section .botn-rituales a.rectangle:hover {
+  opacity: 0.9;
+}
+
+#rituales-capilares-section .botn-rituales a.rectangle:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+#rituales-capilares-section .botn-rituales a.rectangle:active {
+  transform: scale(0.98);
+}
+
+/* Clase para accesibilidad */
+#rituales-capilares-section .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* Estilos responsive para el texto "TU BELLEZA NATURAL" */
