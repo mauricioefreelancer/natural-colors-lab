@@ -1077,6 +1077,167 @@
   border-width: 0;
 }
 
+/* ===== Mobile (≤600px) para Rituales Capilares ===== */
+@media (max-width: 600px) {
+  #rituales-capilares-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 92px 16px 24px;
+    min-height: auto;
+    box-shadow: none;
+  }
+  #rituales-capilares-section .fondo-banner { display: none; }
+  #rituales-capilares-section .barra-verde { display: none; }
+
+  /* Imagen de la modelo al inicio */
+  #rituales-capilares-section .image {
+    position: static;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+    z-index: auto;
+    display: block;
+  }
+
+  /* Caja verde con textos */
+  #rituales-capilares-section .rituales-text {
+    position: static;
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(270deg, rgba(64, 140, 36, 1) 0%, rgba(43, 107, 19, 1) 100%);
+    border-radius: 16px;
+    padding: 16px 16px 20px;
+    color: #ffffff;
+  }
+  #rituales-capilares-section .rituales-text .text-wrapper-2 {
+    position: static;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: 10.37px;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #ffffff;
+  }
+  #rituales-capilares-section .rituales-text .p {
+    position: static;
+    font-weight: 500;
+    font-size: 34px;
+    color: #ffa6af;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    white-space: normal;
+    text-align: left;
+  }
+  #rituales-capilares-section .rituales-text .div {
+    position: static;
+    width: 100%;
+    height: 5px;
+    border-radius: 9px;
+    background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
+    margin: 4px 0 12px;
+  }
+  #rituales-capilares-section .rituales-text .en-natural-colors {
+    position: static;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: left;
+  }
+  #rituales-capilares-section .rituales-text .text-wrapper-3 { font-weight: 500; }
+  #rituales-capilares-section .rituales-text .text-wrapper-4 { font-weight: 900; }
+
+  /* Grid de productos debajo del cuadro verde */
+  #rituales-capilares-section .product-grid {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+    max-width: 420px;
+  }
+  #rituales-capilares-section .restauracin-capilar,
+  #rituales-capilares-section .ritual-curls-hair,
+  #rituales-capilares-section .ritual-fast-men,
+  #rituales-capilares-section .hidratacin-keramilk {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  /* Botón al final */
+  #rituales-capilares-section .botn-rituales {
+    position: static;
+    width: 100%;
+    max-width: 420px;
+    margin: 8px auto 0;
+  }
+  #rituales-capilares-section .botn-rituales .rectangle {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 46px;
+    border-radius: 10px 0 10px 0;
+    background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
+  }
+  #rituales-capilares-section .botn-rituales .DESCUBRIR-AHORA {
+    position: static;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 3.25px;
+    text-align: center;
+    padding-top: 14px;
+    color: #ffffff;
+  }
+}
+
+/* ===== Ajustes intermedios para mantener alineación a la derecha ===== */
+@media (max-width: 1600px) {
+  #rituales-capilares-section { height: 800px; }
+  #rituales-capilares-section .image { left: 200px; width: 330px; height: 700px; }
+  #rituales-capilares-section .text-wrapper-2 { right: 330px; width: 520px; font-size: 22px; letter-spacing: 12px; }
+  #rituales-capilares-section .p { right: 200px; width: 620px; font-size: 38px; }
+  #rituales-capilares-section .div { right: 300px; width: 520px; }
+  #rituales-capilares-section .en-natural-colors { right: 220px; width: 600px; font-size: 21px; line-height: 36px; }
+  #rituales-capilares-section .product-grid { right: 220px; width: 720px; }
+  #rituales-capilares-section .botn-rituales { right: 500px; width: 340px; }
+}
+@media (max-width: 1400px) {
+  #rituales-capilares-section .image { left: 140px; width: 320px; height: 680px; }
+  #rituales-capilares-section .text-wrapper-2 { right: 262px; width: 480px; font-size: 21px; letter-spacing: 10px; }
+  #rituales-capilares-section .p { right: 140px; width: 560px; font-size: 34px; }
+  #rituales-capilares-section .div { right: 215px; width: 480px; }
+  #rituales-capilares-section .en-natural-colors { right: 150px; width: 540px; font-size: 20px; line-height: 32px; }
+  #rituales-capilares-section .product-grid { right: 90px; width: 640px; gap: 16px; }
+  #rituales-capilares-section .botn-rituales { right: 375px; width: 320px; }
+}
+@media (max-width: 1200px) {
+  #rituales-capilares-section .image { left: 100px; width: 310px; height: 660px; }
+  #rituales-capilares-section .text-wrapper-2 { right: 180px; width: 440px; font-size: 20px; letter-spacing: 9px; }
+  #rituales-capilares-section .p { right: 80px; width: 520px; font-size: 30px; }
+  #rituales-capilares-section .div { right: 145px; width: 440px; height: 6px; }
+  #rituales-capilares-section .en-natural-colors { right: 85px; width: 500px; font-size: 18px; line-height: 30px; }
+  #rituales-capilares-section .product-grid { right: 10px; width: 600px; gap: 14px; }
+  #rituales-capilares-section .botn-rituales { right: 320px; width: 300px; }
+}
+@media (max-width: 992px) {
+  #rituales-capilares-section .image { left: 60px; width: 300px; height: 640px; }
+  #rituales-capilares-section .text-wrapper-2 { right: 60px; width: 420px; font-size: 19px; letter-spacing: 8px; }
+  #rituales-capilares-section .p { right: 60px; width: 500px; font-size: 28px; }
+  #rituales-capilares-section .div { right: 60px; width: 420px; }
+  #rituales-capilares-section .en-natural-colors { right: 60px; width: 480px; font-size: 17px; line-height: 28px; }
+  #rituales-capilares-section .product-grid { right: 60px; width: 520px; height: auto; flex-wrap: wrap; justify-content: flex-end; }
+  #rituales-capilares-section .restauracin-capilar,
+  #rituales-capilares-section .ritual-curls-hair,
+  #rituales-capilares-section .ritual-fast-men,
+  #rituales-capilares-section .hidratacin-keramilk { width: 120px; height: 150px; }
+  #rituales-capilares-section .botn-rituales { right: 80px; width: 280px; }
+}
+
 /* Estilos responsive para el texto "TU BELLEZA NATURAL" */
 @media (max-width: 601px) {
   .seccion1 .div {
