@@ -1222,7 +1222,7 @@
   #rituales-capilares-section .div { right: 145px; width: 440px; height: 6px; }
   #rituales-capilares-section .en-natural-colors { right: 85px; width: 500px; font-size: 18px; line-height: 30px; }
   #rituales-capilares-section .product-grid { right: 10px; width: 600px; gap: 14px; }
-  #rituales-capilares-section .botn-rituales { right: 320px; width: 300px; }
+  #rituales-capilares-section .botn-rituales { right: 320px; width: 300px; } 
 }
 @media (max-width: 992px) {
   #rituales-capilares-section .image { left: 60px; width: 300px; height: 640px; }
@@ -1251,6 +1251,7 @@
     display: block;
   }
 }
+
 
 /* Estilos para Sección 1 */
 .seccion1 {
