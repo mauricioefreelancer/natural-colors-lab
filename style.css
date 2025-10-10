@@ -1043,11 +1043,13 @@
   background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
   text-decoration: none;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 #rituales-capilares-section .botn-rituales a.rectangle:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, rgba(255, 186, 195, 1) 0%, rgba(162, 34, 34, 1) 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 #rituales-capilares-section .botn-rituales a.rectangle:focus {
@@ -1244,9 +1246,9 @@
 
   /* Efectos hover específicos para móvil */
   #rituales-capilares-section .botn-rituales a.rectangle:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    background: linear-gradient(135deg, rgba(74, 150, 46, 1) 0%, rgba(53, 117, 29, 1) 100%);
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, rgba(255, 186, 195, 1) 0%, rgba(162, 34, 34, 1) 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
 
   #rituales-capilares-section .botn-rituales a.rectangle:active {
@@ -1428,11 +1430,10 @@
   /* Div separador movido a media query específica para móvil (max-width: 768px) */
   #rituales-capilares-section .en-natural-colors { right: 0px; width: 480px; font-size: 17px; line-height: 28px; }
   #rituales-capilares-section .product-grid { right: 60px; width: 520px; height: auto; flex-wrap: wrap; justify-content: flex-end; }
-  /* Estilos del grid de productos movidos a media queries específicas para tablet y móvil */
-  #rituales-capilares-section .botn-rituales { right: 280px; width: 280px; }
+  /* Estilos del grid de productos y botón movidos a media queries específicas para tablet y móvil */
 }
 
-/* Media query específica para tamaños intermedios (769px-992px) - Configuración independiente del div y grid */
+/* Media query específica para tamaños intermedios (769px-992px) - Configuración independiente del div, grid y botón */
 @media (min-width: 769px) and (max-width: 992px) {
   #rituales-capilares-section .div {
     right: 60px;
@@ -1447,9 +1448,15 @@
     width: 120px;
     height: 150px;
   }
+  
+  /* Configuración independiente del botón para tablet */
+  #rituales-capilares-section .botn-rituales {
+    right: 280px;
+    width: 280px;
+  }
 }
 
-/* Media query específica para móvil - Configuración independiente del div y grid */
+/* Media query específica para móvil - Configuración independiente del div, grid y botón */
 @media (max-width: 768px) {
   #rituales-capilares-section .div {
     right: 60px;
@@ -1461,8 +1468,13 @@
   #rituales-capilares-section .ritual-curls-hair,
   #rituales-capilares-section .ritual-fast-men,
   #rituales-capilares-section .hidratacin-keramilk {
-    width: 300px;
     height: auto;
+  }
+  
+  /* Configuración independiente del botón para móvil */
+  #rituales-capilares-section .botn-rituales {
+    right: 280px;
+    width:480px;
   }
 }
 
