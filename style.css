@@ -1187,6 +1187,7 @@
     right: auto;
     top: auto;
     left: auto;
+    justify-items: center;
   }
 
   #rituales-capilares-section .restauracin-capilar,
