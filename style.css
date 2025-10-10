@@ -1039,11 +1039,6 @@
 /* Estilos para enlaces del botón */
 #rituales-capilares-section .botn-rituales a.rectangle {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 350px;
-  height: 77px;
   border-radius: 30px 0px 30px 0px;
   background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
   text-decoration: none;
@@ -1108,7 +1103,7 @@
   #rituales-capilares-section .rituales-text-container {
     position: static;
     width: 100%;
-    max-width: 500px;
+    max-width: fit-content;
     background: linear-gradient(135deg, rgba(64, 140, 36, 1) 0%, rgba(43, 107, 19, 1) 100%);
     border-radius: 20px;
     padding: 25px;
@@ -1242,6 +1237,18 @@
     top: auto;
     left: auto;
   }
+
+  /* Efectos hover específicos para móvil */
+  #rituales-capilares-section .botn-rituales a.rectangle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, rgba(74, 150, 46, 1) 0%, rgba(53, 117, 29, 1) 100%);
+  }
+
+  #rituales-capilares-section .botn-rituales a.rectangle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
 }
 
 /* ===== Mobile (≤600px) para Rituales Capilares ===== */
@@ -1251,7 +1258,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding: 92px 16px 24px;
+    padding: 30px 16px 24px;
     min-height: auto;
     box-shadow: none;
   }
@@ -1421,7 +1428,7 @@
   #rituales-capilares-section .ritual-curls-hair,
   #rituales-capilares-section .ritual-fast-men,
   #rituales-capilares-section .hidratacin-keramilk { width: 120px; height: 150px; }
-  #rituales-capilares-section .botn-rituales { right: 300px; width: 280px; }
+  #rituales-capilares-section .botn-rituales { right: 280px; width: 280px; }
 }
 
 /* Estilos responsive para el texto "TU BELLEZA NATURAL" */
