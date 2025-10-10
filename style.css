@@ -1122,6 +1122,7 @@
     text-align: center;
     color: #ffffff;
     width: 100%;
+    max-width: fit-content;
     right: auto;
     top: auto;
     left: auto;
@@ -1138,6 +1139,7 @@
     white-space: normal;
     text-align: center;
     width: 100%;
+    max-width: fit-content;
     right: auto;
     top: auto;
     left: auto;
@@ -1163,6 +1165,7 @@
     color: #ffffff;
     text-align: center;
     width: 100%;
+    max-width: fit-content;
     right: auto;
     top: auto;
     left: auto;
@@ -1421,7 +1424,7 @@
   #rituales-capilares-section .image { left: -5px; width: 300px; height: 640px; }
   #rituales-capilares-section .text-wrapper-2 { right: 40px; width: 420px; font-size: 19px; letter-spacing: 8px; }
   #rituales-capilares-section .p { right: 10px; width: 500px; font-size: 28px; }
-  #rituales-capilares-section .div { right: 60px; width: 420px; }
+  /* Div separador movido a media query específica para móvil (max-width: 768px) */
   #rituales-capilares-section .en-natural-colors { right: 0px; width: 480px; font-size: 17px; line-height: 28px; }
   #rituales-capilares-section .product-grid { right: 60px; width: 520px; height: auto; flex-wrap: wrap; justify-content: flex-end; }
   #rituales-capilares-section .restauracin-capilar,
@@ -1429,6 +1432,22 @@
   #rituales-capilares-section .ritual-fast-men,
   #rituales-capilares-section .hidratacin-keramilk { width: 120px; height: 150px; }
   #rituales-capilares-section .botn-rituales { right: 280px; width: 280px; }
+}
+
+/* Media query específica para tamaños intermedios (769px-992px) - Configuración independiente del div */
+@media (min-width: 769px) and (max-width: 992px) {
+  #rituales-capilares-section .div {
+    right: 60px;
+    width: 420px;
+  }
+}
+
+/* Media query específica para móvil - Configuración independiente del div */
+@media (max-width: 768px) {
+  #rituales-capilares-section .div {
+    right: 60px;
+    width: auto;
+  }
 }
 
 /* Estilos responsive para el texto "TU BELLEZA NATURAL" */
