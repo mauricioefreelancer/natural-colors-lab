@@ -1428,26 +1428,41 @@
   /* Div separador movido a media query específica para móvil (max-width: 768px) */
   #rituales-capilares-section .en-natural-colors { right: 0px; width: 480px; font-size: 17px; line-height: 28px; }
   #rituales-capilares-section .product-grid { right: 60px; width: 520px; height: auto; flex-wrap: wrap; justify-content: flex-end; }
-  #rituales-capilares-section .restauracin-capilar,
-  #rituales-capilares-section .ritual-curls-hair,
-  #rituales-capilares-section .ritual-fast-men,
-  #rituales-capilares-section .hidratacin-keramilk { width: 120px; height: 150px; }
+  /* Estilos del grid de productos movidos a media queries específicas para tablet y móvil */
   #rituales-capilares-section .botn-rituales { right: 280px; width: 280px; }
 }
 
-/* Media query específica para tamaños intermedios (769px-992px) - Configuración independiente del div */
+/* Media query específica para tamaños intermedios (769px-992px) - Configuración independiente del div y grid */
 @media (min-width: 769px) and (max-width: 992px) {
   #rituales-capilares-section .div {
     right: 60px;
     width: 420px;
   }
+  
+  /* Estilos del grid de productos para tablet */
+  #rituales-capilares-section .restauracin-capilar,
+  #rituales-capilares-section .ritual-curls-hair,
+  #rituales-capilares-section .ritual-fast-men,
+  #rituales-capilares-section .hidratacin-keramilk {
+    width: 120px;
+    height: 150px;
+  }
 }
 
-/* Media query específica para móvil - Configuración independiente del div */
+/* Media query específica para móvil - Configuración independiente del div y grid */
 @media (max-width: 768px) {
   #rituales-capilares-section .div {
     right: 60px;
     width: auto;
+  }
+  
+  /* Estilos del grid de productos para móvil */
+  #rituales-capilares-section .restauracin-capilar,
+  #rituales-capilares-section .ritual-curls-hair,
+  #rituales-capilares-section .ritual-fast-men,
+  #rituales-capilares-section .hidratacin-keramilk {
+    width: 300px;
+    height: auto;
   }
 }
 
