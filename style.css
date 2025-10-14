@@ -838,6 +838,45 @@
   }
 }
 
+/* ===== SECCIÓN FAVORITOS - SOLO TÍTULO ===== */
+.favoritos-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.favoritos-section h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #408c24;
+  font-size: 96px;
+  letter-spacing: 10px;
+  margin: 0;
+}
+
+.favoritos-section h2::before,
+.favoritos-section h2::after {
+  content: "•";
+}
+
+.favoritos-section h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #408c24;
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin: 24px 0;
+}
+
+.favoritos-section h3::after {
+  content: "";
+  display: block;
+  width: 753px;
+  height: 11px;
+  background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
+  border-radius: 9px;
+  margin: 24px auto 0;
+}
+
 /* ===== ESTILOS PARA SECCIÓN RITUALES CAPILARES ===== */
 
 /* Variables específicas para RITUALES CAPILARES */
