@@ -838,6 +838,13 @@
   }
 }
 
+/* ===== SECCIÓN VIDEO MAQUILA ===== */
+#videomaquila {
+  box-shadow: 0 -8px 25px rgba(124, 179, 66, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
 /* ===== VERSIÓN MÓVIL PARA SECCIÓN FAVORITOS (max-width: 855px) ===== */
 @media screen and (max-width: 855px) {
   
@@ -1021,7 +1028,9 @@
 /* ===== SECCIÓN FAVORITOS - SOLO TÍTULO ===== */
 .favoritos-section {
   text-align: center;
-  padding: 40px 0;
+  box-shadow: 0 -8px 25px rgba(124, 179, 66, 0.4);
+  position: relative;
+  z-index: 2;
 }
 
 .favoritos-section h2 {
@@ -1030,7 +1039,7 @@
   color: #408c24;
   font-size: 30px;
   letter-spacing: 10px;
-  margin: 0;
+  padding-top: 20px;
 }
 
 .favoritos-section h2::before,
@@ -1166,7 +1175,7 @@
   overflow: hidden;
   padding-top: 92px; /* Espacio interno para el header fijo */
   box-sizing: border-box;
-  box-shadow: 0 -4px 15px rgba(124, 179, 66, 0.2);
+  box-shadow: 0 -8px 25px rgba(124, 179, 66, 0.4);
   z-index: 2;
 }
 
