@@ -846,32 +846,30 @@
     font-family: "Raleway", sans-serif !important;
     font-weight: 700 !important;
     color: #408c24 !important;
-    font-size: 28px !important;
+    font-size: 20px !important;
     text-align: center !important;
-    margin: 40px 0 20px 0 !important;
+    margin: 30px 0 15px 0 !important;
     text-transform: uppercase !important;
-    letter-spacing: 2px !important;
+    letter-spacing: 1.5px !important;
   }
 
   /* Línea decorativa del título - móvil */
   .favoritos-section h3::after {
     content: "" !important;
     display: block !important;
-    width: 300px !important;
-    height: 8px !important;
+    width: 200px !important;
+    height: 6px !important;
     background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%) !important;
     border-radius: 9px !important;
-    margin: 15px auto 0 !important;
+    margin: 12px auto 0 !important;
   }
 
   /* Contenedor principal de productos - móvil */
   .favoritos-products {
     background: radial-gradient(50% 50% at 50% 50%, rgba(64, 140, 36, 1) 0%, rgba(43, 107, 19, 1) 100%) !important;
-    padding: 40px 20px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 30px !important;
     margin-top: 1% !important;
     max-width: 855px !important;
   }
@@ -907,6 +905,14 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
     position: relative !important;
     transform: translateY(-40px) !important;
+    overflow: hidden !important;
+  }
+
+  .favoritos-products .product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
   }
 
   /* Título del producto - móvil */
@@ -957,6 +963,61 @@
 
 }
 
+/* ===== VERSIÓN MÓVIL PEQUEÑO PARA SECCIÓN FAVORITOS (max-width: 480px) ===== */
+@media screen and (max-width: 480px) {
+  
+  /* Título de la sección favoritos - móvil pequeño */
+  .favoritos-section h3 {
+    font-size: 18px !important;
+    margin: 25px 0 12px 0 !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* Línea decorativa del título - móvil pequeño */
+  .favoritos-section h3::after {
+    width: 150px !important;
+    height: 5px !important;
+    margin: 10px auto 0 !important;
+  }
+
+  /* Tarjetas de producto - móvil pequeño */
+  .favoritos-products .product-card {
+    width: 250px !important;
+    max-width: 95% !important;
+    padding: 8px 20px !important;
+  }
+
+  /* Área de imagen del producto - móvil pequeño */
+  .favoritos-products .product-image {
+    width: 160px !important;
+    height: 140px !important;
+    border: 5px solid white !important;
+    transform: translateY(-35px) !important;
+    overflow: hidden !important;
+  }
+
+  .favoritos-products .product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+  /* Título del producto - móvil pequeño */
+  .favoritos-products .product-card h4 {
+    font-size: 15px !important;
+    transform: translateY(-35px) !important;
+  }
+
+  /* Botón de compra - móvil pequeño */
+  .favoritos-products .product-card .btn {
+    padding: 8px 20px !important;
+    font-size: 11px !important;
+    transform: translateY(-20px) !important;
+  }
+
+}
+
 /* ===== SECCIÓN FAVORITOS - SOLO TÍTULO ===== */
 .favoritos-section {
   text-align: center;
@@ -967,7 +1028,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   color: #408c24;
-  font-size: 96px;
+  font-size: 30px;
   letter-spacing: 10px;
   margin: 0;
 }
@@ -1034,6 +1095,14 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   position: relative;
   transform: translateY(-50px);
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .product-card h4 {
