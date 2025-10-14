@@ -886,7 +886,6 @@
     background-color: white !important;
     border-radius: 25px !important;
     padding: 10px 25px !important;
-    width: 280px !important;
     max-width: 90% !important;
     text-align: center !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
@@ -989,7 +988,6 @@
 
   /* Tarjetas de producto - móvil pequeño */
   .favoritos-products .product-card {
-    width: 250px !important;
     max-width: 95% !important;
     padding: 8px 20px !important;
   }
