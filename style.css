@@ -838,6 +838,34 @@
   }
 }
 
+/* ===== RESPONSIVE VIDEOS MAQUILA ===== */
+
+/* Por defecto (Desktop - 769px y arriba): mostrar video horizontal, ocultar vertical */
+.videomaquila .video-desktop {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  border-radius: 80px 0 80px 0;
+}
+
+.videomaquila .video-mobile {
+  display: none;
+}
+
+/* Mobile (768px y abajo): mostrar video vertical, ocultar horizontal */
+@media (max-width: 768px) {
+  .videomaquila .video-desktop {
+    display: none;
+  }
+  
+  .videomaquila .video-mobile {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    border-radius: 80px 0 80px 0;
+  }
+}
+
 /* ===== ESTILOS PARA SECCIÓN MAQUILA ===== */
 .videomaquila h2 {
   font-family: "Raleway", sans-serif;
