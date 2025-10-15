@@ -1190,7 +1190,7 @@
   bottom: 30px;
   left: 30px;
   color: white;
-  font-size: 14px;
+  font-size: 10px;
   font-family: "Raleway", Arial, sans-serif;
   margin: 0;
   z-index: 4;
@@ -1202,7 +1202,7 @@
   bottom: 30px;
   right: 30px;
   color: white;
-  font-size: 14px;
+  font-size: 10px;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
 }
