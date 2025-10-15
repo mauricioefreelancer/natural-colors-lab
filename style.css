@@ -1080,6 +1080,7 @@
   position: absolute;
   top: 450px;
   left: 50%;
+  width: 50%;
   transform: translateX(-50%);
   color: white;
   font-size: 20px;
@@ -1087,6 +1088,11 @@
   text-align: center;
   margin: 0;
   z-index: 4;
+}
+
+/* Negrilla para texto dentro del footer */
+.footer-description-unique strong {
+  font-weight: bold;
 }
 
 /* Copyright del footer */
