@@ -838,6 +838,318 @@
   }
 }
 
+/* Media queries para footer - Pantallas de escritorio */
+@media (min-width: 1200px) {
+  .footer-title-unique {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .footer-email-label-unique,
+  .footer-phone-label-unique,
+  .footer-office-label-unique,
+  .footer-schedule-label-unique {
+    font-size: 16px;
+  }
+  
+  .footer-email-value-unique,
+  .footer-phone-value-unique,
+  .footer-office-value-unique,
+  .footer-schedule-value-unique {
+    font-size: 14px;
+  }
+  
+  .footer-description-unique {
+    font-size: 14px;
+  }
+  
+  .footer-copyright-unique,
+  .footer-brand-unique {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer-title-unique {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+  }
+  
+  .footer-email-label-unique,
+  .footer-phone-label-unique,
+  .footer-office-label-unique,
+  .footer-schedule-label-unique {
+    font-size: 15px;
+  }
+  
+  .footer-email-value-unique,
+  .footer-phone-value-unique,
+  .footer-office-value-unique,
+  .footer-schedule-value-unique {
+    font-size: 13px;
+  }
+  
+  .footer-description-unique {
+    font-size: 13px;
+  }
+  
+  .footer-copyright-unique,
+  .footer-brand-unique {
+    font-size: 11px;
+  }
+}
+
+/* ===== ESTILOS ÚNICOS PARA FOOTER ===== */
+/* Contenedor principal del footer */
+.footer-container-unique {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #1f7600;
+}
+
+/* Imagen de fondo del footer */
+.footer-background-image-unique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+/* Overlay verde del footer - Ya no es necesario */
+/* .footer-overlay-green-unique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 140, 36, 0.8);
+  z-index: 2;
+  pointer-events: none;
+} */
+
+/* Footer principal */
+.footer-main-content-unique {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+/* Título principal del footer */
+.footer-title-unique {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway", Arial, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  z-index: 4;
+}
+
+/* Línea decorativa del footer */
+.footer-decorative-line-unique {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 2px;
+  background-color: white;
+  z-index: 4;
+}
+
+/* Email - Etiqueta */
+.footer-email-label-unique {
+  position: absolute;
+  top: 110px;
+  left: 20%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Email - Valor */
+.footer-email-value-unique {
+  position: absolute;
+  top: 130px;
+  left: 20%;
+  color: white;
+  font-size: 12px;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Celular - Etiqueta */
+.footer-phone-label-unique {
+  position: absolute;
+  top: 110px;
+  right: 20%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Celular - Valor */
+.footer-phone-value-unique {
+  position: absolute;
+  top: 130px;
+  right: 20%;
+  color: white;
+  font-size: 12px;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Oficina - Etiqueta */
+.footer-office-label-unique {
+  position: absolute;
+  top: 160px;
+  left: 20%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Oficina - Valor */
+.footer-office-value-unique {
+  position: absolute;
+  top: 180px;
+  left: 20%;
+  color: white;
+  font-size: 12px;
+  font-family: "Raleway", Arial, sans-serif;
+  margin: 0;
+  z-index: 4;
+}
+
+/* Horario - Etiqueta */
+.footer-schedule-label-unique {
+  position: absolute;
+  top: 160px;
+  right: 20%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Horario - Valor */
+.footer-schedule-value-unique {
+  position: absolute;
+  top: 180px;
+  right: 20%;
+  color: white;
+  font-size: 12px;
+  font-family: "Raleway", Arial, sans-serif;
+  margin: 0;
+  z-index: 4;
+}
+
+/* Logo central del footer */
+.footer-logo-unique {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: auto;
+  z-index: 4;
+}
+
+/* Texto descriptivo del footer */
+.footer-description-unique {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  color: white;
+  font-size: 12px;
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  z-index: 4;
+}
+
+/* Copyright del footer */
+.footer-copyright-unique {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 10px;
+  font-family: "Raleway", Arial, sans-serif;
+  margin: 0;
+  z-index: 4;
+}
+
+/* Brand name del footer */
+.footer-brand-unique {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 10px;
+  font-family: "Raleway", Arial, sans-serif;
+  z-index: 4;
+}
+
+/* Iconos del footer */
+.footer-icon-email-unique {
+  position: absolute;
+  top: 110px;
+  left: calc(20% - 30px);
+  width: 20px;
+  height: 20px;
+  z-index: 4;
+}
+
+.footer-icon-phone-unique {
+  position: absolute;
+  top: 110px;
+  right: calc(20% + 80px);
+  width: 20px;
+  height: 20px;
+  z-index: 4;
+}
+
+.footer-icon-office-unique {
+  position: absolute;
+  top: 160px;
+  left: calc(20% - 30px);
+  width: 20px;
+  height: 20px;
+  z-index: 4;
+}
+
+.footer-icon-schedule-unique {
+  position: absolute;
+  top: 160px;
+  right: calc(20% + 80px);
+  width: 20px;
+  height: 20px;
+  z-index: 4;
+}
+
 /* ===== RESPONSIVE VIDEOS MAQUILA ===== */
 
 /* Por defecto (Desktop - 769px y arriba): mostrar video horizontal, ocultar vertical */
