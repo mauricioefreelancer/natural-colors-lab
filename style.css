@@ -1156,10 +1156,10 @@
 .footer-contact-container-mobile {
   position: absolute;
   top: 190px;
-  left: 56%;
+  left: 50%;
   transform: translateX(-50%);
   display: flex;
-  width: 100%;
+  width: 56%;
   max-width: 600px;
   z-index: 4;
   gap: 30px 40px;
