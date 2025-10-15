@@ -947,6 +947,7 @@
   position: relative;
   top: 40px;
   left: 50%;
+  width: 80%;
   transform: translateX(-50%);
   color: white;
   font-size: 40px;
@@ -970,98 +971,31 @@
   z-index: 4;
 }
 
-/* Email - Etiqueta */
-.footer-email-label-unique {
-  position: absolute;
-  top: 170px;
-  left: 20%;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Raleway", Arial, sans-serif;
-  z-index: 4;
-}
-
-/* Email - Valor */
-.footer-email-value-unique {
-  position: absolute;
-  top: 195px;
-  left: 20%;
-  color: white;
-  font-size: 16px;
-  font-family: "Raleway", Arial, sans-serif;
-  z-index: 4;
-}
-
-/* Celular - Etiqueta */
-.footer-phone-label-unique {
-  position: absolute;
-  top: 170px;
-  right: 20%;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Raleway", Arial, sans-serif;
-  z-index: 4;
-}
-
-/* Celular - Valor */
-.footer-phone-value-unique {
-  position: absolute;
-  top: 195px;
-  right: 20%;
-  color: white;
-  font-size: 16px;
-  font-family: "Raleway", Arial, sans-serif;
-  z-index: 4;
-}
-
-/* Oficina - Etiqueta */
-.footer-office-label-unique {
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Raleway", Arial, sans-serif;
-  z-index: 4;
-}
-
-/* Oficina - Valor */
-.footer-office-value-unique {
-  position: absolute;
-  top: 275px;
-  left: 20%;
-  color: white;
-  font-size: 16px;
-  font-family: "Raleway", Arial, sans-serif;
-  margin: 0;
-  z-index: 4;
-}
-
-/* Horario - Etiqueta */
+/* Labels del footer */
+.footer-email-label-unique,
+.footer-phone-label-unique,
+.footer-office-label-unique,
 .footer-schedule-label-unique {
-  position: absolute;
-  top: 250px;
-  right: 20%;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Raleway", Arial, sans-serif;
-  z-index: 4;
-}
-
-/* Horario - Valor */
-.footer-schedule-value-unique {
-  position: absolute;
-  top: 275px;
-  right: 20%;
   color: white;
   font-size: 16px;
+  font-weight: 600;
   font-family: "Raleway", Arial, sans-serif;
   margin: 0;
-  z-index: 4;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+/* Values del footer */
+.footer-email-value-unique,
+.footer-phone-value-unique,
+.footer-office-value-unique,
+.footer-schedule-value-unique {
+  color: white;
+  font-size: 14px;
+  font-family: "Raleway", Arial, sans-serif;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 400;
 }
 
 /* Logo central del footer */
@@ -1095,6 +1029,38 @@
   font-weight: bold;
 }
 
+/* Contenedor flex para datos de contacto */
+.footer-contact-container-unique {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1000px;
+  z-index: 4;
+  gap: 20px;
+}
+
+/* Elementos individuales de contacto */
+.footer-contact-item-unique {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  max-width: 220px;
+  justify-content: flex-start;
+}
+
+/* Contenedor de texto para cada elemento */
+.footer-contact-text-unique {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 /* Copyright del footer */
 .footer-copyright-unique {
   position: absolute;
@@ -1119,40 +1085,14 @@
 }
 
 /* Iconos del footer */
-.footer-icon-email-unique {
-  position: absolute;
-  top: 170px;
-  left: calc(20% - 35px);
-  width: 24px;
-  height: 24px;
-  z-index: 4;
-}
-
-.footer-icon-phone-unique {
-  position: absolute;
-  top: 170px;
-  right: calc(20% + 90px);
-  width: 24px;
-  height: 24px;
-  z-index: 4;
-}
-
-.footer-icon-office-unique {
-  position: absolute;
-  top: 250px;
-  left: calc(20% - 35px);
-  width: 24px;
-  height: 24px;
-  z-index: 4;
-}
-
+.footer-icon-email-unique,
+.footer-icon-phone-unique,
+.footer-icon-office-unique,
 .footer-icon-schedule-unique {
-  position: absolute;
-  top: 250px;
-  right: calc(20% + 90px);
-  width: 24px;
-  height: 24px;
-  z-index: 4;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  filter: brightness(1.1);
 }
 
 /* ===== RESPONSIVE VIDEOS MAQUILA ===== */
@@ -1396,6 +1336,21 @@
     height: 6px !important;
   }
 
+  /* Footer responsive para tablets */
+  .footer-contact-container-unique {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    width: 90% !important;
+    top: 180px !important;
+  }
+
+  .footer-contact-item-unique {
+    justify-content: center !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+
 }
 
 /* ===== VERSIÓN MÓVIL PEQUEÑO PARA SECCIÓN FAVORITOS (max-width: 480px) ===== */
@@ -1468,6 +1423,42 @@
   .footer-decorative-line-unique {
     width: 150px !important;
     height: 5px !important;
+  }
+
+  /* Footer responsive para móviles pequeños */
+  .footer-contact-container-unique {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+    width: 95% !important;
+    top: 160px !important;
+  }
+
+  .footer-contact-item-unique {
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .footer-icon-email-unique,
+  .footer-icon-phone-unique,
+  .footer-icon-office-unique,
+  .footer-icon-schedule-unique {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .footer-email-label-unique,
+  .footer-phone-label-unique,
+  .footer-office-label-unique,
+  .footer-schedule-label-unique {
+    font-size: 15px !important;
+  }
+
+  .footer-email-value-unique,
+  .footer-phone-value-unique,
+  .footer-office-value-unique,
+  .footer-schedule-value-unique {
+    font-size: 13px !important;
   }
 
 }
