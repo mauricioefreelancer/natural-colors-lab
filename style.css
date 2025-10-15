@@ -1001,7 +1001,7 @@
 /* Logo central del footer */
 .footer-logo-unique {
   position: absolute;
-  top: 370px;
+  top: 320px;
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
@@ -1012,7 +1012,7 @@
 /* Texto descriptivo del footer */
 .footer-description-unique {
   position: absolute;
-  top: 450px;
+  top: 400px;
   left: 50%;
   width: 50%;
   transform: translateX(-50%);
@@ -1032,16 +1032,17 @@
 /* Contenedor flex para datos de contacto */
 .footer-contact-container-unique {
   position: absolute;
-  top: 180px;
-  left: 50%;
+  top: 160px;
+  left: 55%;
   transform: translateX(-50%);
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 600px;
   z-index: 4;
-  gap: 20px;
+  gap: 30px 40px;
 }
 
 /* Elementos individuales de contacto */
@@ -1049,8 +1050,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  flex: 1;
-  max-width: 220px;
+  flex: 0 0 calc(50% - 20px);
+  max-width: 280px;
   justify-content: flex-start;
 }
 
@@ -1186,7 +1187,7 @@
 }
 
 /* ===== VERSIÓN MÓVIL PARA SECCIÓN FAVORITOS (max-width: 855px) ===== */
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 768px) {
   
   /* Título de la sección favoritos - móvil */
   .favoritos-section h3 {
@@ -1343,12 +1344,14 @@
     gap: 30px !important;
     width: 90% !important;
     top: 180px !important;
+    flex-wrap: nowrap !important;
   }
 
   .footer-contact-item-unique {
     justify-content: center !important;
     max-width: none !important;
     width: 100% !important;
+    flex: none !important;
   }
 
 }
@@ -1432,11 +1435,13 @@
     gap: 25px !important;
     width: 95% !important;
     top: 160px !important;
+    flex-wrap: nowrap !important;
   }
 
   .footer-contact-item-unique {
     justify-content: center !important;
     gap: 10px !important;
+    flex: none !important;
   }
 
   .footer-icon-email-unique,
@@ -1497,7 +1502,7 @@
 .favoritos-section h3::after {
   content: "";
   display: block;
-  width: 753px;
+  width: 600px;
   height: 11px;
   background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
   border-radius: 9px;
