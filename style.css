@@ -841,7 +841,7 @@
 /* Media queries para footer - Pantallas de escritorio */
 @media (min-width: 1200px) {
   .footer-title-unique {
-    font-size: 20px;
+    font-size: 36px;
     letter-spacing: 3px;
   }
   
@@ -849,29 +849,29 @@
   .footer-phone-label-unique,
   .footer-office-label-unique,
   .footer-schedule-label-unique {
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .footer-email-value-unique,
   .footer-phone-value-unique,
   .footer-office-value-unique,
   .footer-schedule-value-unique {
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .footer-description-unique {
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .footer-copyright-unique,
   .footer-brand-unique {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer-title-unique {
-    font-size: 18px;
+    font-size: 34px;
     letter-spacing: 2.5px;
   }
   
@@ -879,23 +879,23 @@
   .footer-phone-label-unique,
   .footer-office-label-unique,
   .footer-schedule-label-unique {
-    font-size: 15px;
+    font-size: 19px;
   }
   
   .footer-email-value-unique,
   .footer-phone-value-unique,
   .footer-office-value-unique,
   .footer-schedule-value-unique {
-    font-size: 13px;
+    font-size: 17px;
   }
   
   .footer-description-unique {
-    font-size: 13px;
+    font-size: 17px;
   }
   
   .footer-copyright-unique,
   .footer-brand-unique {
-    font-size: 11px;
+    font-size: 15px;
   }
 }
 
@@ -904,7 +904,7 @@
 .footer-container-unique {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-color: #1f7600;
 }
 
@@ -945,11 +945,11 @@
 /* Título principal del footer */
 .footer-title-unique {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
   letter-spacing: 2px;
@@ -961,11 +961,11 @@
 /* Línea decorativa del footer */
 .footer-decorative-line-unique {
   position: absolute;
-  top: 70px;
+  top: 120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
-  height: 2px;
+  width: 250px;
+  height: 3px;
   background-color: white;
   z-index: 4;
 }
@@ -973,10 +973,10 @@
 /* Email - Etiqueta */
 .footer-email-label-unique {
   position: absolute;
-  top: 110px;
+  top: 170px;
   left: 20%;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
@@ -985,10 +985,10 @@
 /* Email - Valor */
 .footer-email-value-unique {
   position: absolute;
-  top: 130px;
+  top: 195px;
   left: 20%;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
 }
@@ -996,10 +996,10 @@
 /* Celular - Etiqueta */
 .footer-phone-label-unique {
   position: absolute;
-  top: 110px;
+  top: 170px;
   right: 20%;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
@@ -1008,10 +1008,10 @@
 /* Celular - Valor */
 .footer-phone-value-unique {
   position: absolute;
-  top: 130px;
+  top: 195px;
   right: 20%;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
 }
@@ -1019,10 +1019,10 @@
 /* Oficina - Etiqueta */
 .footer-office-label-unique {
   position: absolute;
-  top: 160px;
+  top: 250px;
   left: 20%;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
@@ -1031,10 +1031,10 @@
 /* Oficina - Valor */
 .footer-office-value-unique {
   position: absolute;
-  top: 180px;
+  top: 275px;
   left: 20%;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Raleway", Arial, sans-serif;
   margin: 0;
   z-index: 4;
@@ -1043,10 +1043,10 @@
 /* Horario - Etiqueta */
 .footer-schedule-label-unique {
   position: absolute;
-  top: 160px;
+  top: 250px;
   right: 20%;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
@@ -1055,10 +1055,10 @@
 /* Horario - Valor */
 .footer-schedule-value-unique {
   position: absolute;
-  top: 180px;
+  top: 275px;
   right: 20%;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Raleway", Arial, sans-serif;
   margin: 0;
   z-index: 4;
@@ -1067,10 +1067,10 @@
 /* Logo central del footer */
 .footer-logo-unique {
   position: absolute;
-  top: 220px;
+  top: 340px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
+  width: 150px;
   height: auto;
   z-index: 4;
 }
@@ -1078,12 +1078,12 @@
 /* Texto descriptivo del footer */
 .footer-description-unique {
   position: absolute;
-  top: 290px;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Raleway", Arial, sans-serif;
   text-align: center;
   margin: 0;
@@ -1093,10 +1093,10 @@
 /* Copyright del footer */
 .footer-copyright-unique {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 30px;
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   font-family: "Raleway", Arial, sans-serif;
   margin: 0;
   z-index: 4;
@@ -1105,10 +1105,10 @@
 /* Brand name del footer */
 .footer-brand-unique {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   font-family: "Raleway", Arial, sans-serif;
   z-index: 4;
 }
@@ -1116,37 +1116,37 @@
 /* Iconos del footer */
 .footer-icon-email-unique {
   position: absolute;
-  top: 110px;
-  left: calc(20% - 30px);
-  width: 20px;
-  height: 20px;
+  top: 170px;
+  left: calc(20% - 35px);
+  width: 24px;
+  height: 24px;
   z-index: 4;
 }
 
 .footer-icon-phone-unique {
   position: absolute;
-  top: 110px;
-  right: calc(20% + 80px);
-  width: 20px;
-  height: 20px;
+  top: 170px;
+  right: calc(20% + 90px);
+  width: 24px;
+  height: 24px;
   z-index: 4;
 }
 
 .footer-icon-office-unique {
   position: absolute;
-  top: 160px;
-  left: calc(20% - 30px);
-  width: 20px;
-  height: 20px;
+  top: 250px;
+  left: calc(20% - 35px);
+  width: 24px;
+  height: 24px;
   z-index: 4;
 }
 
 .footer-icon-schedule-unique {
   position: absolute;
-  top: 160px;
-  right: calc(20% + 80px);
-  width: 20px;
-  height: 20px;
+  top: 250px;
+  right: calc(20% + 90px);
+  width: 24px;
+  height: 24px;
   z-index: 4;
 }
 
