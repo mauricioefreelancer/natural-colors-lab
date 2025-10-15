@@ -944,15 +944,15 @@
 
 /* Título principal del footer */
 .footer-title-unique {
-  position: absolute;
+  position: relative;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "Raleway", Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-align: center;
   margin: 0;
   z-index: 4;
@@ -965,8 +965,9 @@
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
-  height: 3px;
-  background-color: white;
+  height: 6px;
+  background: linear-gradient(90deg, rgba(255, 166, 175, 1) 0%, rgba(142, 14, 14, 1) 100%);
+  border-radius: 9px;
   z-index: 4;
 }
 
